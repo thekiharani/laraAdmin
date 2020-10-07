@@ -8,10 +8,10 @@
       <form method="POST" action="{{ route('password.update') }}">
           @csrf
 
-          <input type="hidden" name="token" value="{{ $token }}">
+          <input type="hidden" name="token" value="{{ $request->token }}">
 
         <div class="input-group mb-3">
-          <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email Address" value="{{ old('email') }}" required autocomplete="email" autofocus>
+          <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email Address" value="{{ $request->email ?? old('email') }}" required autocomplete="email" autofocus>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>

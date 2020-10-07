@@ -29,14 +29,14 @@
 
       </form>
 
-        @if (Route::has('password.request'))
-            <hr>
-            <div class="form-group">
-                <a class="btn btn-danger btn-block btn-customized" href="{{ route('password.request') }}">
-                    {{ __('Forgot Your Password?') }}
-                </a>
-            </div>
-        @endif
+{{--        @if (Route::has('password.request'))--}}
+{{--            <hr>--}}
+{{--            <div class="form-group">--}}
+{{--                <a class="btn btn-danger btn-block btn-customized" href="{{ route('password.request') }}">--}}
+{{--                    {{ __('Forgot Your Password?') }}--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--        @endif--}}
 
     </div>
     <!-- /.login-card-body -->
