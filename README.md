@@ -1,2 +1,2 @@
-# Afrinet HRM
+# laraAdmin
 Documentation coming soon...
