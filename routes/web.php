@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'dashboard'])
+    ->name('dashboard')
+    ->middleware('password.confirm');;
 
-Auth::routes(['register' => false]);
+//Auth::routes(['register' => false]);
